@@ -1,0 +1,39 @@
+{
+    "lsp_format_on_save": true,
+    "lsp_code_actions_on_save":
+    {
+        "source.fixAll": true,
+        "source.organizeImports": true,
+    },
+    "show_symbol_action_links": true,
+    "inhibit_snippet_completions": true,
+    "inhibit_word_completions": true,
+    "clients":
+    {
+        "gopls":
+        {
+            "enabled": true,
+            "settings":
+            {
+                "gopls.usePlaceholders": true,
+                "gopls.analyses":
+                {
+                    "fillreturns": true,
+                    "nonewvars": true,
+                    "undeclaredname": true,
+                    "unusedparams": true,
+                },
+                "gopls.completeUnimported": true,
+                "gopls.staticcheck": true,
+            },
+        },
+        "LSP-json":
+        {
+			"enabled": false,
+		},
+        "clangd":
+        {
+			"enabled": true
+		},
+    },
+}

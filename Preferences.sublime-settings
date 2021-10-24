@@ -1,0 +1,19 @@
+{
+    "color_scheme": "Packages/Theme - One Dark/Widget - One Dark.tmTheme",
+    "font_size": 8,
+    "ignored_packages": [
+        "Vintage",
+    ],
+    "material_theme_bright_scrollbars": true,
+    "material_theme_contrast_mode": true,
+    "material_theme_small_statusbar": true,
+    "material_theme_small_tab": true,
+    "material_theme_tabs_autowidth": true,
+    "material_theme_titlebar": true,
+    "translate_tabs_to_spaces": true,
+    "tab_size": 2,
+    "theme": "Material-Theme-Darker.sublime-theme",
+    "dark_theme": "Material-Theme.sublime-theme",
+    "light_theme": "Material-Theme-Palenight.sublime-theme",
+    "update_check": false,
+}

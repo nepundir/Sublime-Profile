@@ -1,0 +1,106 @@
+{
+	"command": ["${node_bin}", "${server_path}", "--stdio"],
+	"initializationOptions": {
+		"logVerbosity": "off",
+		"maxTsServerMemory": 0,
+		"plugins": [],
+		"preferences": {
+			"allowRenameOfImportPath": true,
+			"includeCompletionsForImportStatements": true,
+			"includeCompletionsForModuleExports": true,
+			"includeCompletionsWithInsertText": true,
+		},
+	},
+	"settings": {
+		// Javascript formatting options.
+		"javascript.format.insertSpaceAfterCommaDelimiter": true,
+		"javascript.format.insertSpaceAfterConstructor": false,
+		"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+		"javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+		"javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+		"javascript.format.insertSpaceAfterTypeAssertion": false,
+		"javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+		"javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+		"javascript.format.insertSpaceBeforeTypeAnnotation": false,
+		"javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+		"javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+		"javascript.format.semicolons": "ignore",
+		"javascript.format.trimTrailingWhitespace": true,
+		// Javascript inlay hints options.
+		"javascript.inlayHints.includeInlayEnumMemberValueHints": false,
+		"javascript.inlayHints.includeInlayFunctionLikeReturnTypeHints": false,
+		"javascript.inlayHints.includeInlayFunctionParameterTypeHints": false,
+		"javascript.inlayHints.includeInlayParameterNameHints": "none",
+		"javascript.inlayHints.includeInlayParameterNameHintsWhenArgumentMatchesName": false,
+		"javascript.inlayHints.includeInlayPropertyDeclarationTypeHints": false,
+		"javascript.inlayHints.includeInlayVariableTypeHints": false,
+		// Typescript formatting options.
+		"typescript.format.insertSpaceAfterCommaDelimiter": true,
+		"typescript.format.insertSpaceAfterConstructor": false,
+		"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+		"typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+		"typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+		"typescript.format.insertSpaceAfterTypeAssertion": false,
+		"typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+		"typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+		"typescript.format.insertSpaceBeforeTypeAnnotation": false,
+		"typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+		"typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+		"typescript.format.semicolons": "ignore",
+		"typescript.format.trimTrailingWhitespace": true,
+		// Typescript inlay hints options.
+		"typescript.inlayHints.includeInlayEnumMemberValueHints": false,
+		"typescript.inlayHints.includeInlayFunctionLikeReturnTypeHints": false,
+		"typescript.inlayHints.includeInlayFunctionParameterTypeHints": false,
+		"typescript.inlayHints.includeInlayParameterNameHints": "none",
+		"typescript.inlayHints.includeInlayParameterNameHintsWhenArgumentMatchesName": false,
+		"typescript.inlayHints.includeInlayPropertyDeclarationTypeHints": false,
+		"typescript.inlayHints.includeInlayVariableTypeHints": false,
+	},
+	// ST4 configuration
+	"selector": "source.js, source.jsx, source.ts, source.tsx",
+	// ST3 configuration
+	"languages": [
+		{
+			"languageId": "javascriptreact",
+			"scopes": ["source.jsx", "source.js.react"],
+			"syntaxes": [
+				"Packages/User/JS Custom/Syntaxes/React.sublime-syntax",
+			],
+		},
+		{
+			"languageId": "javascript",
+			"scopes": ["source.js"],
+			"syntaxes": [
+				"Packages/JavaScript/JavaScript.sublime-syntax",
+				"Packages/Babel/JavaScript (Babel).sublime-syntax",
+			],
+		},
+		{
+			"languageId": "typescriptreact",
+			"scopes": ["source.tsx"],
+			"syntaxes": [
+				"Packages/TypeScript Syntax/TypeScriptReact.tmLanguage",
+			],
+		},
+		{
+			"languageId": "typescript",
+			"scopes": ["source.ts"],
+			"syntaxes": [
+				"Packages/TypeScript Syntax/TypeScript.tmLanguage",
+			],
+		},
+	],
+}

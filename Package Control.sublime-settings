@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Emacs Pro Essentials",
+		"Emmet",
+		"Git",
+		"Git blame",
+		"GitStatus",
+		"LSP",
+		"LSP-json",
+		"LSP-pyright",
+		"Markdown Extended",
+		"Material Theme",
+		"MultiEditUtils",
+		"Package Control",
+		"PowerCursors",
+		"PyQt5 Completions",
+		"python-black",
+		"SublimeCodeIntel",
+		"Terminus",
+		"Theme - Midnight",
+		"Theme - One Dark",
+		"Transparency",
+	],
+}
