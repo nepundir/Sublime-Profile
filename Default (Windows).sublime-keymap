@@ -128,17 +128,6 @@
         ],
         "command": "run_macro"
     },
-    //  {"keys": ["ctrl+o"], "command": "sbp_open_line"},    
-    // 
-    {
-        "keys": [
-            "ctrl+o"
-        ],
-        "command": "insert",
-        "args": {
-            "characters": "\n"
-        }
-    },
     {
         "keys": [
             "ctrl+o"
