@@ -5,6 +5,16 @@
         ],
         "command": "sbp_yank"
     },
+    // kill line
+    {
+        "keys": [
+            "ctrl+k"
+        ],
+        "command": "run_macro_file",
+        "args": {
+            "file": "res://Packages/Default/Delete Line.sublime-macro"
+        }
+    },
     // navigate tabs
     {
         "keys": [
@@ -166,10 +176,18 @@
         ],
         "command": "terminus_open",
         "args": {
-            "cwd": "${file_path:${folder}}"
+            "cwd": "${file_path:${folder}}",
+            "post_window_hooks": [
+                [
+                    "carry_file_to_pane",
+                    {
+                        "direction": "right"
+                    }
+                ]
+            ]
         }
     },
-    // change view for terminus
+    // terminus - change view
     {
         "keys": [
             "ctrl+x",
@@ -186,6 +204,23 @@
             }
         ]
     },
+    // terminus - kill split view
+    {
+        "keys": [
+            "ctrl+x",
+            "k"
+        ],
+        "command": "sbp_pane_cmd",
+        "args": {
+            "cmd": "destroy",
+            "pane": "self"
+        },
+        "context": [
+            {
+                "key": "terminus_view"
+            }
+        ]
+    },
     {
         "keys": [
             "f5"
@@ -193,20 +228,6 @@
         "command": "build"
     },
     // LSP KEYBINDS
-    // Find References
-    {
-        "command": "lsp_symbol_references",
-        "keys": [
-            "shift+f12"
-        ],
-        "context": [
-            {
-                "key": "lsp.session_with_capability",
-                "operator": "equal",
-                "operand": "referencesProvider"
-            },
-        ]
-    },
     // Goto Definition
     {
         "keys": [
