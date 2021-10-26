@@ -5,16 +5,6 @@
         ],
         "command": "sbp_yank"
     },
-    // kill line
-    {
-        "keys": [
-            "ctrl+k"
-        ],
-        "command": "run_macro_file",
-        "args": {
-            "file": "res://Packages/Default/Delete Line.sublime-macro"
-        }
-    },
     // navigate tabs
     {
         "keys": [
@@ -204,22 +194,28 @@
             }
         ]
     },
-    // terminus - kill split view
     {
         "keys": [
             "ctrl+x",
-            "k"
+            "p"
         ],
         "command": "sbp_pane_cmd",
         "args": {
-            "cmd": "destroy",
-            "pane": "self"
+            "cmd": "move",
+            "direction": "prev"
         },
         "context": [
             {
                 "key": "terminus_view"
             }
         ]
+    },
+    {
+        "keys": [
+            "ctrl+x",
+            "k"
+        ],
+        "command": "close_file"
     },
     {
         "keys": [
