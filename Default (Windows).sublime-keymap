@@ -26,6 +26,25 @@
             "direction": "right"
         }
     },
+    // move tabs
+    {
+        "keys": [
+            "ctrl+alt+j"
+        ],
+        "command": "move_tab",
+        "args": {
+            "position": "-1"
+        }
+    },
+    {
+        "keys": [
+            "ctrl+alt+;"
+        ],
+        "command": "move_tab",
+        "args": {
+            "position": "+1"
+        }
+    },
     // lsp save
     {
         "command": "lsp_save",
