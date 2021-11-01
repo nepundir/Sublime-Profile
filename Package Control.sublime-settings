@@ -5,6 +5,8 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
+		"BracketHighlighter",
 		"Emacs Pro Essentials",
 		"Emmet",
 		"Git",
@@ -17,6 +19,8 @@
 		"LSP-pyright",
 		"Markdown Extended",
 		"Material Theme",
+		"MoveTab",
+		"Multicommand",
 		"MultiEditUtils",
 		"Origami",
 		"Package Control",
