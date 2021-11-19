@@ -5,6 +5,44 @@
         ],
         "command": "sbp_yank"
     },
+    // find file
+    {
+        "keys": [
+            "ctrl+x",
+            "ctrl+f"
+        ],
+        "command": "sublime_files",
+        "args": {
+            "command": "navigate"
+        }
+    },
+    // select match
+    {
+        "keys": [
+            "ctrl+shift+."
+        ],
+        "command": "expand_next"
+    },
+    {
+        "keys": [
+            "ctrl+shift+,"
+        ],
+        "command": "expand_prev"
+    },
+    {
+        "keys": [
+            "ctrl+c",
+            "ctrl+shift+."
+        ],
+        "command": "select_all_exact_matches"
+    },
+    // side bar
+    {
+        "keys": [
+            "alt+k"
+        ],
+        "command": "toggle_side_bar"
+    },
     // navigate tabs
     {
         "keys": [
@@ -266,5 +304,5 @@
         "args": {
             "side_by_side": false
         },
-    },
+    }
 ]
