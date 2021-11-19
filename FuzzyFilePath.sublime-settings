@@ -1,0 +1,37 @@
+{
+  "disable_keymap_actions": true,
+  "scopes": [
+    {
+      // es6 import from/import "*"
+      "scope": "source\\.js.*string",
+      "auto": true,
+      "relative": true,
+      "base_directory": false,
+      "prefix": [
+        "from",
+        "import"
+      ],
+      "extensions": [
+        "js",
+        "html",
+        "scss",
+        "jsx",
+        "json"
+      ],
+      "replace_on_insert": [
+        [
+          "\\.js$",
+          ""
+        ],
+        [
+          "\\.jsx$",
+          ""
+        ],
+        [
+          "^\\/bower_components\\/",
+          ""
+        ]
+      ]
+    },
+  ]
+}

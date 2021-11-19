@@ -1,23 +1,18 @@
 {
     "lsp_format_on_save": true,
-    "lsp_code_actions_on_save":
-    {
+    "lsp_code_actions_on_save": {
         "source.fixAll": true,
         "source.organizeImports": true,
     },
     "show_symbol_action_links": true,
     "inhibit_snippet_completions": true,
     "inhibit_word_completions": true,
-    "clients":
-    {
-        "gopls":
-        {
+    "clients": {
+        "gopls": {
             "enabled": true,
-            "settings":
-            {
+            "settings": {
                 "gopls.usePlaceholders": true,
-                "gopls.analyses":
-                {
+                "gopls.analyses": {
                     "fillreturns": true,
                     "nonewvars": true,
                     "undeclaredname": true,
@@ -27,13 +22,14 @@
                 "gopls.staticcheck": true,
             },
         },
-        "LSP-json":
-        {
-			"enabled": false,
-		},
-        "clangd":
-        {
-			"enabled": true
-		},
+        "LSP-json": {
+            "enabled": true,
+        },
+        "clangd": {
+            "enabled": true
+        },
+        "LSP-Typescript": {
+            "enabled": true
+        }
     },
 }

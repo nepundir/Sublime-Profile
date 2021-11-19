@@ -1,8 +1,10 @@
 {
+    // general
     "color_scheme": "Packages/Theme - One Dark/Widget - One Dark.tmTheme",
     "font_face": "Hack",
-    "font_size": 7.87,
+    "font_size": 8,
     "ignored_packages": [
+        "Markdown",
         "Vintage",
     ],
     "material_theme_bright_scrollbars": true,
