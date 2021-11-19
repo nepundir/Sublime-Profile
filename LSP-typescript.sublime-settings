@@ -1,5 +1,9 @@
 {
-	"command": ["${node_bin}", "${server_path}", "--stdio"],
+	"command": [
+		"${node_bin}",
+		"${server_path}",
+		"--stdio"
+	],
 	"initializationOptions": {
 		"logVerbosity": "off",
 		"maxTsServerMemory": 0,
@@ -30,7 +34,7 @@
 		"javascript.format.insertSpaceBeforeTypeAnnotation": false,
 		"javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
 		"javascript.format.placeOpenBraceOnNewLineForFunctions": false,
-		"javascript.format.semicolons": "ignore",
+		"javascript.format.semicolons": "insert",
 		"javascript.format.trimTrailingWhitespace": true,
 		// Javascript inlay hints options.
 		"javascript.inlayHints.includeInlayEnumMemberValueHints": false,
@@ -58,7 +62,7 @@
 		"typescript.format.insertSpaceBeforeTypeAnnotation": false,
 		"typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
 		"typescript.format.placeOpenBraceOnNewLineForFunctions": false,
-		"typescript.format.semicolons": "ignore",
+		"typescript.format.semicolons": "insert",
 		"typescript.format.trimTrailingWhitespace": true,
 		// Typescript inlay hints options.
 		"typescript.inlayHints.includeInlayEnumMemberValueHints": false,
@@ -75,14 +79,19 @@
 	"languages": [
 		{
 			"languageId": "javascriptreact",
-			"scopes": ["source.jsx", "source.js.react"],
+			"scopes": [
+				"source.jsx",
+				"source.js.react"
+			],
 			"syntaxes": [
 				"Packages/User/JS Custom/Syntaxes/React.sublime-syntax",
 			],
 		},
 		{
 			"languageId": "javascript",
-			"scopes": ["source.js"],
+			"scopes": [
+				"source.js"
+			],
 			"syntaxes": [
 				"Packages/JavaScript/JavaScript.sublime-syntax",
 				"Packages/Babel/JavaScript (Babel).sublime-syntax",
@@ -90,14 +99,18 @@
 		},
 		{
 			"languageId": "typescriptreact",
-			"scopes": ["source.tsx"],
+			"scopes": [
+				"source.tsx"
+			],
 			"syntaxes": [
 				"Packages/TypeScript Syntax/TypeScriptReact.tmLanguage",
 			],
 		},
 		{
 			"languageId": "typescript",
-			"scopes": ["source.ts"],
+			"scopes": [
+				"source.ts"
+			],
 			"syntaxes": [
 				"Packages/TypeScript Syntax/TypeScript.tmLanguage",
 			],
